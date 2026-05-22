@@ -53,43 +53,40 @@ TTS (Text-to-Speech)
 Audio Response (WebSocket)
 
 ##  System Outputs
-
-### Terminal Logs
+## Terminal Logs
 ![Terminal](assets/output/Terminal1.png)
 
-> Shows backend logs including latency tracking, agent processing, and real-time WebSocket communication.
+- Shows backend logs including latency tracking, agent processing, and real-time WebSocket communication.
 
 ---
-
-### Output 1 – Session Start
+## Output 1 – Session Start
 ![Output1](assets/output/Out1.png)
 
-> WebSocket connection established and session initialized for the patient.
+- WebSocket connection established and session initialized for the patient.
 
 ---
 
-###  Output 2 – Booking Interaction
+### Output 2 – Booking Interaction
 ![Output2](assets/output/out2.png)
 
-> User requests appointment booking and agent processes the intent with real-time response.
+- User requests appointment booking and agent processes the intent with real-time response.
 
 ---
 
-###  Output 3 – Multi-step Conversation
+### Output 3 – Multi-step Conversation
 ![Output3](assets/output/Out3.png)
 
-> Demonstrates full conversation flow including booking confirmation and repeated interactions.
+- Demonstrates full conversation flow including booking confirmation and repeated interactions.
 
 ---
 
 ### Database View
-![Database] (assets/output/DB2.png)
-
-> SQLite database structure showing appointments and internal sequence tracking.
+![Database](assets/output/DB2.png)
+- SQLite database structure showing appointments and internal sequence tracking.
 
 ---
 
 ### Stored Records
-![Records] (assets/output/out2.png)
+![Records](assets/output/DB2Record.png)
 
-> Successfully stored appointment records with unique patient IDs and timestamps.
+- Successfully stored appointment records with unique patient IDs and timestamps.
