@@ -90,6 +90,6 @@ Audio Response (WebSocket)
 ---
 
 ### Stored Records
-![Records] (assets/output/DB-2(Records).png)
+![Records] (C:\Users\Govind Rathod\Documents\2careAssignment\assets\output\out-2.png)
 
 > Successfully stored appointment records with unique patient IDs and timestamps.
