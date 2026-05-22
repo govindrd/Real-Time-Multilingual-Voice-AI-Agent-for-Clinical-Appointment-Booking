@@ -45,6 +45,8 @@ Streaming ASR (Speech-to-Text)
 Agent (NLU + State Machine + Tools)
    ↓
 Scheduler (Conflict Detection + Booking Logic)
+
+C:\Users\Govind Rathod\Documents\2careAssignment\asstes\Image\Image 2.jpg
    ↓
 Response Generation
    ↓
