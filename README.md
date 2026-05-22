@@ -1,4 +1,4 @@
-# 🎤 Real-Time Multilingual Voice AI Agent — Clinical Appointments
+#  Real-Time Multilingual Voice AI Agent — Clinical Appointments
 
 This project implements a **real-time voice AI agent** for booking and managing clinical appointments through natural conversations.
 
@@ -6,36 +6,36 @@ The system is designed to handle **end-to-end voice interactions** — from spee
 
 ---
 
-## 🚀 Key Capabilities
+##  Key Capabilities
 
-- 🎤 **Voice-first interaction**
+-  **Voice-first interaction**
   - Accepts speech input and responds in natural voice
   - Supports real-time WebSocket communication
 
-- 🌐 **Multilingual support**
+-  **Multilingual support**
   - English, Hindi, Tamil
   - Language preference persists across sessions
 
-- 🧠 **Agentic reasoning**
+-  **Agentic reasoning**
   - Intent detection + slot extraction
   - Tool-based execution (booking, rescheduling, cancellation)
   - Multi-turn conversation handling via state machine
 
-- 🗂️ **Contextual memory**
+-  **Contextual memory**
   - Session memory (Redis with TTL)
   - Persistent user context across sessions
 
-- 📅 **Appointment scheduling engine**
+-  **Appointment scheduling engine**
   - Conflict detection (interval overlap)
   - Working hours enforcement
   - Alternative slot suggestions
 
-- 📞 **Outbound campaign support**
+-  **Outbound campaign support**
   - Reminder calls and follow-ups (extensible via scheduler)
 
 ---
 
-## 🏗️ System Architecture
+##  System Architecture
 
 ```plaintext
 User Speech
@@ -45,11 +45,51 @@ Streaming ASR (Speech-to-Text)
 Agent (NLU + State Machine + Tools)
    ↓
 Scheduler (Conflict Detection + Booking Logic)
-
-C:\Users\Govind Rathod\Documents\2careAssignment\asstes\Image\Image 2.jpg
    ↓
 Response Generation
    ↓
 TTS (Text-to-Speech)
    ↓
 Audio Response (WebSocket)
+
+##  System Outputs
+
+### Terminal Logs
+![Terminal](assets/output/Terminal-1.png)
+
+> Shows backend logs including latency tracking, agent processing, and real-time WebSocket communication.
+
+---
+
+### Output 1 – Session Start
+![Output1](assets/output/Out-1.png)
+
+> WebSocket connection established and session initialized for the patient.
+
+---
+
+###  Output 2 – Booking Interaction
+![Output2](assets/output/out-2.png)
+
+> User requests appointment booking and agent processes the intent with real-time response.
+
+---
+
+###  Output 3 – Multi-step Conversation
+![Output3](assets/output/Out-3.png)
+
+> Demonstrates full conversation flow including booking confirmation and repeated interactions.
+
+---
+
+### Database View
+![Database] (assets/output/DB-2.png)
+
+> SQLite database structure showing appointments and internal sequence tracking.
+
+---
+
+### Stored Records
+![Records] (assets/output/DB-2(Records).png)
+
+> Successfully stored appointment records with unique patient IDs and timestamps.
