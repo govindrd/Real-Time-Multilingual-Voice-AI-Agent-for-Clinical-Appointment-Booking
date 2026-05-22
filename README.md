@@ -89,6 +89,102 @@ Audio Response (WebSocket)
 ```
 
 
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/govindrd/Real-Time-Multilingual-Voice-AI-Agent-for-Clinical-Appointment-Booking.git
+cd 2careAssignment
+```
+
+### 2. Backend Setup
+```
+cd src
+python -m venv venv
+venv\Scripts\activate
+pip install -r backend/requirements.txt
+```
+### 3. Run Backend
+```
+uvicorn backend.app:app --reload
+Runs at: http://127.0.0.1:8000
+```
+
+### 4. Frontend
+```
+cd frontend
+npx serve .
+
+Open: http://localhost:3000
+
+```
+
+##  Memory Design
+
+### 🔹 Session Memory
+- Stores current conversation state  
+- Tracks pending booking  
+- Enables multi-step flows (book → confirm)  
+
+### 🔹 Persistent Memory
+- Stored in SQLite (`appointments.db`)  
+- Tracks appointment history  
+- Enables cross-session awareness  
+
+---
+
+##  Latency Breakdown
+
+| Component   | Time           |
+|------------|-----------------|
+| NLU        | ~1–5 ms         |
+| Scheduling | ~1–5 ms         |
+| TTS        | ~500–700 ms     |
+| **Total**  | **~600–900 ms** |
+
+>  Note: gTTS increases latency beyond the 450ms target.
+
+---
+
+##  Trade-offs
+
+###  Advantages
+- Modular and clean architecture  
+- Real-time WebSocket communication  
+- Easy to extend and scale  
+
+###  Limitations
+- gTTS is slow (high latency)  
+- Rule-based intent detection  
+- SQLite not production-ready  
+- No real streaming ASR  
+
+---
+
+##  Known Limitations
+
+- No real voice input (text simulated)  
+- Limited multilingual support  
+- No authentication system  
+- No horizontal scaling  
+
+---
+
+##  Future Improvements
+
+- Integrate real ASR (Whisper / Deepgram)  
+- Use faster TTS (ElevenLabs / OpenAI)  
+- Add Redis for memory with TTL  
+- Enable multilingual (Hindi, Tamil)  
+- Deploy on cloud with scaling  
+
+
+
+
 ##  System Outputs
 ## Terminal Logs
 ![Terminal](assets/output/Terminal1.png)
