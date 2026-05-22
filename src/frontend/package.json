@@ -1,0 +1,11 @@
+{
+  "name": "voice-agent-demo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "parcel index.html --port 1234"
+  },
+  "devDependencies": {
+    "parcel": "^2.9.0"
+  }
+}

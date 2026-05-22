@@ -1,0 +1,7 @@
+.env
+venv/
+__pycache__/
+*.pyc
+appointments.db
+app.log
+node_modules/
