@@ -16,11 +16,11 @@ class Memory:
     def __init__(self):
         if redis and REDIS_URL:
             self._client = redis.from_url(REDIS_URL)
-            print("✅ Using Redis for memory")
+            print("Using Redis for memory")
         else:
             self._client = None
             self._store = {}
-            print("⚠️ Using in-memory store (dev mode)")
+            print("Using in-memory store (dev mode)")
 
     # -------------------------
     # LOW LEVEL

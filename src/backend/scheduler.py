@@ -93,19 +93,19 @@ def book_appointment(patient_id: str, doctor_id: str, start_ts: int, end_ts: int
 
     now_ts = int(datetime.now().timestamp())
 
-    # ❌ Past time
+    #  Past time
     if start_ts < now_ts:
         return {"ok": False, "reason": "past_time"}
 
-    # ❌ Invalid time
+    #  Invalid time
     if end_ts <= start_ts:
         return {"ok": False, "reason": "invalid_time"}
 
-    # ❌ Outside working hours
+    #  Outside working hours
     if not _is_working_hours(start_ts):
         return {"ok": False, "reason": "outside_working_hours"}
 
-    # ❌ Conflict
+    #  Conflict
     conflicts = find_conflicts(doctor_id, start_ts, end_ts)
     if conflicts:
         return {
@@ -114,7 +114,7 @@ def book_appointment(patient_id: str, doctor_id: str, start_ts: int, end_ts: int
             "alternatives": suggest_alternatives(doctor_id, start_ts)
         }
 
-    # ✅ Insert booking
+    #  Insert booking
     with sqlite3.connect(DB) as conn:
         c = conn.cursor()
         c.execute(
