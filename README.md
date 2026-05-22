@@ -52,6 +52,43 @@ TTS (Text-to-Speech)
    ↓
 Audio Response (WebSocket)
 
+```
+```
+##  Project Structure
+2careAssignment/
+│
+├── assets/
+│ ├── Image/ # Architecture & workflow diagrams
+│ └── output/ # Output screenshots (logs, UI, DB)
+│
+├── src/
+│ ├── backend/
+│ │ ├── agent.py            # Core agent logic (NLU + orchestration)
+│ │ ├── app.py              # FastAPI app + WebSocket server
+│ │ ├── asr.py              # Speech-to-text module
+│ │ ├── tts.py              # Text-to-speech module
+│ │ ├── scheduler.py        # Appointment booking & conflict logic
+│ │ ├── memory.py           # Session + persistent memory
+│ │ ├── state_machine.py    # Conversation state handling
+│ │ ├── tools.py            # Helper tools (availability, booking)
+│ │ ├── logging_config.py   # Logging setup
+│ │ ├── appointments.db     # SQLite database
+│ │ ├── requirements.txt    # Backend dependencies
+│ │ └── README.md           # Backend-specific docs
+│ │
+│ └── frontend/
+│ ├── index.html            # UI for testing voice agent
+│ ├── client.js             # WebSocket client logic
+│ └── package.json          # Frontend dependencies
+│
+├── .env.example            # Environment variables template
+├── .gitignore
+├── README.md               # Main documentation
+
+
+```
+
+
 ##  System Outputs
 ## Terminal Logs
 ![Terminal](assets/output/Terminal1.png)
