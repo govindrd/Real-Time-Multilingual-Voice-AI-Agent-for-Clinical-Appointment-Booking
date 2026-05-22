@@ -54,3 +54,5 @@ TTS (Text-to-Speech)
    ↓
 Audio Response (WebSocket)
 
+C:\Users\Govind Rathod\Documents\2careAssignment\asstes\Image\Image 2.jpg
+
