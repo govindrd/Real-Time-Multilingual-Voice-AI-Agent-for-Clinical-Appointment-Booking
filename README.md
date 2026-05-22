@@ -54,5 +54,6 @@ TTS (Text-to-Speech)
    ↓
 Audio Response (WebSocket)
 
-C:\Users\Govind Rathod\Documents\2careAssignment\asstes\Image\Image 2.jpg
+<img width="1896" height="916" alt="Screenshot 2026-05-22 125831" src="https://github.com/user-attachments/assets/7c3ac69a-787f-452e-845f-d7d6cace8aa2" />
+
 
