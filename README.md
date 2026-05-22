@@ -51,3 +51,16 @@ Response Generation
 TTS (Text-to-Speech)
    ↓
 Audio Response (WebSocket)
+
+
+<img width="1913" height="1007" alt="Screenshot 2026-05-22 125950" src="https://github.com/user-attachments/assets/551d8777-1ed2-42cb-8e19-7be7ad9426d0" />
+
+<img width="869" height="346" alt="Screenshot 2026-05-22 125839" src="https://github.com/user-attachments/assets/94876eb5-5a2c-4d87-9474-63186247b977" />
+
+<img width="1919" height="882" alt="Screenshot 2026-05-22 131335" src="https://github.com/user-attachments/assets/63cb4db0-f802-43fb-887a-7d096d95e4fa" />
+
+
+<img width="1890" height="989" alt="Screenshot 2026-05-22 132701" src="https://github.com/user-attachments/assets/2be158bd-3682-45ac-b9be-474230260d7e" />
+
+<img width="1606" height="533" alt="Screenshot 2026-05-22 133542" src="https://github.com/user-attachments/assets/7f29fed0-12a1-4749-842c-52afa33b6244" />
+
